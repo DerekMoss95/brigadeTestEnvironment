@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Make sure that VT-x or AMD-v virtualization is enabled in your computer’s BIOS or VM settings if you are doing this on a VM
+#Also make sure to sudo chmod +x this script
 
 sudo apt update
 sudo apt upgrade
