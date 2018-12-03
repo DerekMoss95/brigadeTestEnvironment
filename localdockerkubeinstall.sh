@@ -5,6 +5,7 @@
 
 sudo apt update
 sudo apt upgrade
+sudo apt install git curl python-pip
 sudo apt install virtualbox
 sudo apt-get update && sudo apt-get install -y apt-transport-https
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
@@ -17,6 +18,7 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.s
 chmod 700 get_helm.sh
 ./get_helm.sh
 helm init
+sleep 2m
 helm repo add brigade https://azure.github.io/brigade
 helm install -n brigade brigade/brigade
 helm status brigade
